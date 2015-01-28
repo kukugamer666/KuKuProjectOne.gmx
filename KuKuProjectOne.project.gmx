@@ -11,7 +11,9 @@
     <sprite>sprites\spr_kuku_right</sprite>
     <sprite>sprites\spr_kuku_up</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_tileset_main</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_kuku</object>
