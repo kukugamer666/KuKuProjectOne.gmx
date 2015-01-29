@@ -11,6 +11,7 @@
     <sprite>sprites\spr_kuku_right</sprite>
     <sprite>sprites\spr_kuku_up</sprite>
     <sprite>sprites\spr_tree</sprite>
+    <sprite>sprites\spr_flower</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_tileset_main</background>
@@ -19,6 +20,7 @@
   <objects name="objects">
     <object>objects\obj_kuku</object>
     <object>objects\obj_tree</object>
+    <object>objects\obj_flower</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_kuku</room>
