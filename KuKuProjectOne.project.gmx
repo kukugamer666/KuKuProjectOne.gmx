@@ -35,8 +35,12 @@
       <object>objects\obj_flower</object>
       <object>objects\obj_tree</object>
     </objects>
+    <objects name="System">
+      <object>objects\GameState</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_TitleScreen</room>
     <room>rooms\rm_kuku</room>
   </rooms>
   <help>
