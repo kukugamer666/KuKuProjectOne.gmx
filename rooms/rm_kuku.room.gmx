@@ -85,6 +85,7 @@
     <instance objName="obj_flower" x="489" y="211" name="inst_272E877F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_flower" x="518" y="195" name="inst_78312462" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_flower" x="494" y="189" name="inst_D2BE2580" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_NPC_Bob" x="320" y="288" name="inst_5D09C5FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_tileset_main" x="0" y="0" w="32" h="32" xo="0" yo="512" id="10000001" name="inst_B3DEA50A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

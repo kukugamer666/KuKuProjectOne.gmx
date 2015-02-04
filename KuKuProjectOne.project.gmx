@@ -33,6 +33,14 @@
         <sprite>sprites\spr_Window_Base</sprite>
       </sprites>
     </sprites>
+    <sprites name="NPC">
+      <sprites name="Bob">
+        <sprite>sprites\spr_Bob_Down</sprite>
+        <sprite>sprites\spr_Bob_Left</sprite>
+        <sprite>sprites\spr_Bob_Right</sprite>
+        <sprite>sprites\spr_Bob_Up</sprite>
+      </sprites>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Environment">
@@ -53,6 +61,10 @@
       <objects name="Window">
         <object>objects\obj_Window_Base</object>
       </objects>
+    </objects>
+    <objects name="NPC">
+      <object>objects\obj_NPC_Bob</object>
+      <object>objects\obj_NPC_Base</object>
     </objects>
   </objects>
   <rooms name="rooms">
