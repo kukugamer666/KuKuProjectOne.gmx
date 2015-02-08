@@ -19,6 +19,9 @@
         <sprite>sprites\spr_tree</sprite>
         <sprite>sprites\spr_flower</sprite>
       </sprites>
+      <sprites name="Misc">
+        <sprite>sprites\spr_Tea</sprite>
+      </sprites>
     </sprites>
     <sprites name="System">
       <sprites name="Window">
@@ -65,6 +68,13 @@
     <objects name="NPC">
       <object>objects\obj_NPC_Bob</object>
       <object>objects\obj_NPC_Base</object>
+    </objects>
+    <objects name="Quests">
+      <objects name="NPC_Quest">
+        <objects name="NPC_Bob">
+          <object>objects\obj_Tea</object>
+        </objects>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">
