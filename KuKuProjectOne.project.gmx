@@ -48,6 +48,21 @@
   <backgrounds name="background">
     <backgrounds name="Environment">
       <background>background\bg_tileset_main</background>
+      <background>background\Map00211</background>
+    </backgrounds>
+    <backgrounds name="Levels">
+      <backgrounds name="HomeCity">
+        <background>background\Map00200</background>
+        <background>background\Map00201</background>
+        <background>background\Map00202</background>
+        <background>background\Map00210</background>
+        <background>background\Map00211a</background>
+        <background>background\Map00212</background>
+        <background>background\Map00220</background>
+        <background>background\Map00221</background>
+        <background>background\Map00222</background>
+        <background>background\background11</background>
+      </backgrounds>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
@@ -78,6 +93,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_HomeCity</room>
     <room>rooms\rm_TitleScreen</room>
     <room>rooms\rm_kuku</room>
   </rooms>
