@@ -35,6 +35,10 @@
         <sprite>sprites\spr_Window_BR</sprite>
         <sprite>sprites\spr_Window_Base</sprite>
       </sprites>
+      <sprites name="Collisions">
+        <sprite>sprites\spr_Collision</sprite>
+        <sprite>sprites\spr_Collision_Off</sprite>
+      </sprites>
     </sprites>
     <sprites name="NPC">
       <sprites name="Bob">
@@ -75,6 +79,7 @@
       <object>objects\obj_tree</object>
     </objects>
     <objects name="System">
+      <object>objects\obj_Collision</object>
       <object>objects\GameState</object>
       <objects name="Window">
         <object>objects\obj_Window_Base</object>
