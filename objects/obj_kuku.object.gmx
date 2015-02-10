@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -194,10 +194,11 @@ if(keyboard_check(ord('Z'))){
           <argument>
             <kind>1</kind>
             <string>///Debug script
+physics_draw_debug();
 
 draw_self();
 
-draw_circle(x, y -16, 24, 3)
+//draw_circle(x, y -16, 24, 3)
 </string>
           </argument>
         </arguments>
