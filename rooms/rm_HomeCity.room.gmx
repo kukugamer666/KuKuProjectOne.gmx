@@ -113,6 +113,7 @@
     <instance objName="obj_Collision" x="896" y="864" name="inst_38098333" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_Warp" x="288" y="1088" name="inst_B9A1A8DA" locked="0" code="event_inherited();&#xA;dest_room = rm_Pub;&#xA;dest_x = 640;&#xA;dest_y = 576;&#xA;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Hero_Reposition" x="0" y="0" name="inst_1E40743B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_NPC_Guard" x="371" y="1184" name="inst_8EA3B14F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Map00200" x="0" y="0" w="640" h="480" xo="0" yo="0" id="10000548" name="inst_6866FA2F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
