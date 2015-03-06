@@ -37,6 +37,7 @@
       </sprites>
       <sprites name="Collisions">
         <sprite>sprites\spr_Collision</sprite>
+        <sprite>sprites\spr_Enemy_Collision</sprite>
         <sprite>sprites\spr_Collision_Off</sprite>
       </sprites>
       <sprites name="Warp">
@@ -58,6 +59,14 @@
         <sprite>sprites\spr_Guard_Up</sprite>
       </sprites>
       <sprite>sprites\spr_Follow_Target</sprite>
+    </sprites>
+    <sprites name="Enemies">
+      <sprites name="Forest_Monster">
+        <sprite>sprites\spr_Forest_Down</sprite>
+        <sprite>sprites\spr_Forest_Left</sprite>
+        <sprite>sprites\spr_Forest_Right</sprite>
+        <sprite>sprites\spr_Forest_Up</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -125,11 +134,19 @@
         </objects>
       </objects>
     </objects>
+    <objects name="Enemies">
+      <object>objects\obj_Monster_Base</object>
+      <object>objects\Enemy_Collision</object>
+      <objects name="Forest_Monsters">
+        <object>objects\obj_Forest_Monster</object>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_TitleScreen</room>
     <room>rooms\rm_HomeCity</room>
     <room>rooms\rm_Pub</room>
+    <room>rooms\rm_forest</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
