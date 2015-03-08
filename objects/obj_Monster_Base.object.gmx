@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0.1;
+phy_fixed_rotation = true;
 
 max_hp = 10;
 hp = max_hp;
