@@ -21,6 +21,9 @@
       </sprites>
       <sprites name="Misc">
         <sprite>sprites\spr_Tea</sprite>
+        <sprite>sprites\spr_Gem</sprite>
+        <sprite>sprites\spr_Gem_Glow</sprite>
+        <sprite>sprites\spr_Gate</sprite>
       </sprites>
     </sprites>
     <sprites name="System">
@@ -38,6 +41,7 @@
       <sprites name="Collisions">
         <sprite>sprites\spr_Collision</sprite>
         <sprite>sprites\spr_Enemy_Collision</sprite>
+        <sprite>sprites\spr_Event_Colission</sprite>
         <sprite>sprites\spr_Collision_Off</sprite>
       </sprites>
       <sprites name="Warp">
@@ -73,6 +77,10 @@
       <sprite>sprites\spr_Attack_Blitz</sprite>
       <sprite>sprites\spr_Attack_Ice</sprite>
       <sprite>sprites\spr_Attack_Grass</sprite>
+      <sprite>sprites\spr_Laser</sprite>
+    </sprites>
+    <sprites name="Boss">
+      <sprite>sprites\spr_ZBoss</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -153,11 +161,24 @@
       <object>objects\obj_Attack_Blitz</object>
       <object>objects\obj_Attack_Grass</object>
     </objects>
+    <objects name="Bosses">
+      <objects name="Cave">
+        <objects name="Boss">
+          <object>objects\obj_Boss_Z</object>
+        </objects>
+        <objects name="Misc">
+          <object>objects\obj_Evil_Gem</object>
+          <object>objects\obj_Gate</object>
+          <object>objects\obj_Start_Boss</object>
+        </objects>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_TitleScreen</room>
     <room>rooms\rm_HomeCity</room>
     <room>rooms\rm_Pub</room>
+    <room>rooms\rm_Cave</room>
     <room>rooms\rm_forest</room>
   </rooms>
   <help>
