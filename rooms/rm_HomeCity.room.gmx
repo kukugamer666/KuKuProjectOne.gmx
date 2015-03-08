@@ -54,7 +54,7 @@
     <instance objName="obj_tree" x="136" y="516" name="inst_AC29AFD3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree" x="517" y="480" name="inst_881C9F01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree" x="564" y="485" name="inst_AB249EC4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_kuku" x="309" y="1173" name="inst_67A470BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_kuku" x="689" y="1330" name="inst_67A470BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="64" y="64" name="inst_536EA301" locked="0" code="" scaleX="1" scaleY="38" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="64" y="1280" name="inst_F7062C77" locked="0" code="" scaleX="18" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="736" y="1280" name="inst_17327585" locked="0" code="" scaleX="17" scaleY="3" colour="4294967295" rotation="0"/>

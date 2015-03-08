@@ -29,6 +29,8 @@
 walk_speed = 1.0;
 action = false;
 
+attack_type = 1;
+
 </string>
           </argument>
         </arguments>
@@ -76,27 +78,27 @@ depth = phy_position_y * -1;
             <kind>1</kind>
             <string>/// Handle input logic KuKu
 
-if(keyboard_check(vk_left)){
+if(keyboard_check(ord('A'))){
     sprite_index = spr_kuku_left;
     phy_position_x -= 1 * walk_speed;
 }
 
-if(keyboard_check(vk_right)){
+if(keyboard_check(ord('D'))){
     sprite_index = spr_kuku_right;
     phy_position_x += 1 * walk_speed;
 }
 
-if(keyboard_check(vk_up)){
+if(keyboard_check(ord('W'))){
     sprite_index = spr_kuku_up;
     phy_position_y -= 1 * walk_speed;
 }
 
-if(keyboard_check(vk_down)){
+if(keyboard_check(ord('S'))){
     sprite_index = spr_kuku_down;
     phy_position_y += 1 * walk_speed;
 }
 
-if(keyboard_check(ord('Z'))){
+if(keyboard_check(ord('I'))){
     /// Interaction
     action = true;
 } else {
@@ -203,6 +205,151 @@ if(keyboard_check(vk_shift)){
           <argument>
             <kind>1</kind>
             <string>///Collide with
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="5" enumb="51">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>attack_type = 3;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="5" enumb="50">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>attack_type = 2;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="5" enumb="49">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>attack_type = 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="53">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>dir = point_direction(phy_position_x, phy_position_y, mouse_x, mouse_y);
+
+spawn_x = lengthdir_x(16, dir);
+spawn_y = lengthdir_y(16, dir);
+
+switch(attack_type)
+{
+    case 1:
+        attack = instance_create(phy_position_x + spawn_x, phy_position_y + spawn_y, obj_Attack_Fire);
+    break;
+
+    case 2:
+        attack = instance_create(phy_position_x + spawn_x, phy_position_y + spawn_y, obj_Attack_Ice);
+    break;
+
+    case 3:
+        attack = instance_create(phy_position_x + spawn_x, phy_position_y + spawn_y, obj_Attack_Blitz);
+    break;
+}
+
+
+with(attack)
+{
+    force_x = lengthdir_x(force, other.dir);
+    force_y = lengthdir_y(force, other.dir);
+
+    phy_rotation = -other.dir;
+    physics_apply_impulse(x, y, force_x, force_y);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_text(10, 10, "Attack type: " + string(attack_type));
+
 </string>
           </argument>
         </arguments>
