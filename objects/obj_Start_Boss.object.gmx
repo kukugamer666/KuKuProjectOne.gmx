@@ -25,10 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>obj_Gate.phy_active = true;
-
-GameState.switches[? "boss_room_entered"] = true;
-
+            <string>if(!GameState.switches[? "boss_room_completed"])
+{
+    obj_Gate.phy_active = true;
+    
+    GameState.switches[? "boss_room_entered"] = true;
+}
 </string>
           </argument>
         </arguments>

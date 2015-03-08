@@ -160,6 +160,7 @@
       <object>objects\obj_Attack_Ice</object>
       <object>objects\obj_Attack_Blitz</object>
       <object>objects\obj_Attack_Grass</object>
+      <object>objects\obj_Attack_Laser</object>
     </objects>
     <objects name="Bosses">
       <objects name="Cave">

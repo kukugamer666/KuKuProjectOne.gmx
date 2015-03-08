@@ -36,6 +36,8 @@ switches[? "quest_teaparty_started"] = false;
 switches[? "quest_teaparty_gottea"] = false;
 
 switches[? "boss_room_entered"] = false;
+switches[? "boss_room_completed"] = false;
+
 </string>
           </argument>
         </arguments>
